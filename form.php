@@ -3,9 +3,9 @@
     if (isset($_POST["submit"])) { // metoda _POST si vytáhla informace z name "submit", isset = je submit nastavené?
         $username = $_POST["username"]; //zachycení Uživatelského jména
         $password = $_POST["password"]; //zachycení Hesla
-    echo $username;
+    echo "Ahoj " . $username; // vypsání Uživatelského jména
     echo "<br>";
-    echo $password;
+    echo "Tvé heslo je: " . $password; // vypsání Hesla
     }
 
 ?>
