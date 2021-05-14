@@ -2,6 +2,7 @@
 
     if (isset($_POST["submit"])) { // metoda _POST si vytáhla informace z name "submit", isset = je submit nastavené?
         
+        $name = ["David", "Patrik", "Marek", "Jana"]; //pole "zaměstnanců"
         $minimum = 3; //minimální počet znaků
         $maximum = 10; //maximální počet znaků
         
@@ -14,9 +15,14 @@
 
         if (strlen($username) <= $minimum) { //podmínka pro délku jména
             echo "Uživatelské jméno musí být delší než 3 znaky";
-        } 
-        else if (strlen($username) >= $maximum) {
+        } else if (strlen($username) >= $maximum) {
             echo "Uživatelské jméno musí být kratší než 10 znaků";
+        }
+
+        if (in_array($username, $name)) { //jestliže je vstup $username v poli $name, umožnit přístup
+            echo "Jsi úspěšně přihlášený";
+        } else {
+            echo "Neoprávněný uživatel";
         }
 
     }
