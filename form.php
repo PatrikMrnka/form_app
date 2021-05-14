@@ -15,14 +15,17 @@
 
         if (strlen($username) <= $minimum) { //podmínka pro délku jména
             echo "Uživatelské jméno musí být delší než 3 znaky";
+            echo "<br>";
         } else if (strlen($username) >= $maximum) {
             echo "Uživatelské jméno musí být kratší než 10 znaků";
+            echo "<br>";
         }
 
         if (in_array($username, $name)) { //jestliže je vstup $username v poli $name, umožnit přístup
             echo "Jsi úspěšně přihlášený";
         } else {
             echo "Neoprávněný uživatel";
+            echo "<br>";
         }
     }
 ?>
