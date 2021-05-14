@@ -10,5 +10,13 @@
     <?php 
     
     ?>
+
+    <form action="">
+        <input type="text" placeholder="Uživatelské jméno">
+        <br>
+        <input type="password" placeholder="Heslo">
+        <br>
+        <input type="submit" value="send">
+    </form>
 </body>
 </html>
