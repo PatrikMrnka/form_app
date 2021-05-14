@@ -1,5 +1,5 @@
 <?php 
-
+#metoda _GET pošle data pomocí URL adresy, používat _POST!!!
     if (isset($_POST["submit"])) { // metoda _POST si vytáhla informace z name "submit", isset = je submit nastavené?
         
         $name = ["David", "Patrik", "Marek", "Jana"]; //pole "zaměstnanců"
@@ -24,7 +24,5 @@
         } else {
             echo "Neoprávněný uživatel";
         }
-
     }
-
 ?>
