@@ -1,3 +1,11 @@
+<?php 
+
+    if (isset($_POST["submit"])) { // metoda _POST si vytáhla informace z name "submit"
+        echo "Formulář úspěšný";
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +15,12 @@
     <title>Formulář v PHP</title>
 </head>
 <body>
-    <?php 
-    
-    ?>
-
-    <form action="">
+    <form action="form.php" method="post">
         <input type="text" placeholder="Uživatelské jméno">
         <br>
         <input type="password" placeholder="Heslo">
         <br>
-        <input type="submit" value="send">
+        <input type="submit" name="submit" value="Odeslat">
     </form>
 </body>
 </html>
